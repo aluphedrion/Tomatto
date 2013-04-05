@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Recipes.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UICollectionViewController
 
 @end

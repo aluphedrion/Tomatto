@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9316545A170DE32800E467F5 /* RecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93165459170DE32800E467F5 /* RecipesViewController.m */; };
+		9316545D170DEB0300E467F5 /* ImparRecipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9316545C170DEB0300E467F5 /* ImparRecipeCell.m */; };
+		93165460170DEBE200E467F5 /* ParRecipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9316545F170DEBE200E467F5 /* ParRecipeCell.m */; };
+		93165463170DFC4C00E467F5 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93165462170DFC4C00E467F5 /* RecipeViewController.m */; };
+		93165470170E03A700E467F5 /* QuantitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9316546F170E03A700E467F5 /* QuantitiesTableViewController.m */; };
+		93165473170E03CC00E467F5 /* NamesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93165472170E03CC00E467F5 /* NamesTableViewController.m */; };
+		93165476170E08B000E467F5 /* IngredientNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93165475170E08B000E467F5 /* IngredientNumberCell.m */; };
+		93165479170E08BF00E467F5 /* IngredientNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93165478170E08BF00E467F5 /* IngredientNameCell.m */; };
+		93239134170772F800979F43 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 93239133170772F800979F43 /* Recipe.m */; };
+		932391371707736400979F43 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 932391361707736400979F43 /* Ingredient.m */; };
+		93375B47170742540048DAC4 /* Ingredients.m in Sources */ = {isa = PBXBuildFile; fileRef = 93375B46170742540048DAC4 /* Ingredients.m */; };
+		93375B4A170747F30048DAC4 /* Recipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 93375B49170747F30048DAC4 /* Recipes.m */; };
 		9388287217025471001D022B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9388287117025471001D022B /* UIKit.framework */; };
 		9388287417025471001D022B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9388287317025471001D022B /* Foundation.framework */; };
 		9388287617025471001D022B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9388287517025471001D022B /* CoreGraphics.framework */; };
@@ -17,10 +29,36 @@
 		9388288617025471001D022B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9388288517025471001D022B /* Default@2x.png */; };
 		9388288817025471001D022B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9388288717025471001D022B /* Default-568h@2x.png */; };
 		9388288B17025471001D022B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388288917025471001D022B /* MainStoryboard.storyboard */; };
-		9388288E17025471001D022B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9388288D17025471001D022B /* ViewController.m */; };
+		938828961702554F001D022B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938828951702554F001D022B /* ViewController.m */; };
+		93B04CDB1705EC6C005836E4 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B04CDA1705EC6C005836E4 /* ButtonCell.m */; };
+		93B04CDE1705F7F1005836E4 /* InstructionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B04CDD1705F7F1005836E4 /* InstructionsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93165458170DE32800E467F5 /* RecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesViewController.h; sourceTree = "<group>"; };
+		93165459170DE32800E467F5 /* RecipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesViewController.m; sourceTree = "<group>"; };
+		9316545B170DEB0300E467F5 /* ImparRecipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImparRecipeCell.h; sourceTree = "<group>"; };
+		9316545C170DEB0300E467F5 /* ImparRecipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImparRecipeCell.m; sourceTree = "<group>"; };
+		9316545E170DEBE200E467F5 /* ParRecipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParRecipeCell.h; sourceTree = "<group>"; };
+		9316545F170DEBE200E467F5 /* ParRecipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParRecipeCell.m; sourceTree = "<group>"; };
+		93165461170DFC4C00E467F5 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		93165462170DFC4C00E467F5 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		9316546E170E03A700E467F5 /* QuantitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuantitiesTableViewController.h; sourceTree = "<group>"; };
+		9316546F170E03A700E467F5 /* QuantitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuantitiesTableViewController.m; sourceTree = "<group>"; };
+		93165471170E03CC00E467F5 /* NamesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NamesTableViewController.h; sourceTree = "<group>"; };
+		93165472170E03CC00E467F5 /* NamesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NamesTableViewController.m; sourceTree = "<group>"; };
+		93165474170E08B000E467F5 /* IngredientNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientNumberCell.h; sourceTree = "<group>"; };
+		93165475170E08B000E467F5 /* IngredientNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientNumberCell.m; sourceTree = "<group>"; };
+		93165477170E08BF00E467F5 /* IngredientNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientNameCell.h; sourceTree = "<group>"; };
+		93165478170E08BF00E467F5 /* IngredientNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientNameCell.m; sourceTree = "<group>"; };
+		93239132170772F800979F43 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		93239133170772F800979F43 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		932391351707736400979F43 /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
+		932391361707736400979F43 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
+		93375B45170742540048DAC4 /* Ingredients.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredients.h; sourceTree = "<group>"; };
+		93375B46170742540048DAC4 /* Ingredients.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredients.m; sourceTree = "<group>"; };
+		93375B48170747F30048DAC4 /* Recipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipes.h; sourceTree = "<group>"; };
+		93375B49170747F30048DAC4 /* Recipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipes.m; sourceTree = "<group>"; };
 		9388286E17025471001D022B /* Tomatto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomatto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9388287117025471001D022B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9388287317025471001D022B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,8 +73,12 @@
 		9388288517025471001D022B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9388288717025471001D022B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9388288A17025471001D022B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9388288C17025471001D022B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9388288D17025471001D022B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		938828941702554F001D022B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		938828951702554F001D022B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93B04CD91705EC6C005836E4 /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
+		93B04CDA1705EC6C005836E4 /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
+		93B04CDC1705F7F1005836E4 /* InstructionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionsView.h; sourceTree = "<group>"; };
+		93B04CDD1705F7F1005836E4 /* InstructionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +95,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93165464170DFE1700E467F5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9316546E170E03A700E467F5 /* QuantitiesTableViewController.h */,
+				9316546F170E03A700E467F5 /* QuantitiesTableViewController.m */,
+				93165471170E03CC00E467F5 /* NamesTableViewController.h */,
+				93165472170E03CC00E467F5 /* NamesTableViewController.m */,
+				93165458170DE32800E467F5 /* RecipesViewController.h */,
+				93165459170DE32800E467F5 /* RecipesViewController.m */,
+				93165461170DFC4C00E467F5 /* RecipeViewController.h */,
+				93165462170DFC4C00E467F5 /* RecipeViewController.m */,
+				938828941702554F001D022B /* ViewController.h */,
+				938828951702554F001D022B /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		93165465170DFE5800E467F5 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				93375B45170742540048DAC4 /* Ingredients.h */,
+				93375B46170742540048DAC4 /* Ingredients.m */,
+				93375B48170747F30048DAC4 /* Recipes.h */,
+				93375B49170747F30048DAC4 /* Recipes.m */,
+				93239132170772F800979F43 /* Recipe.h */,
+				93239133170772F800979F43 /* Recipe.m */,
+				932391351707736400979F43 /* Ingredient.h */,
+				932391361707736400979F43 /* Ingredient.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		93165466170DFE7A00E467F5 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9316545E170DEBE200E467F5 /* ParRecipeCell.h */,
+				9316545F170DEBE200E467F5 /* ParRecipeCell.m */,
+				93165474170E08B000E467F5 /* IngredientNumberCell.h */,
+				93165475170E08B000E467F5 /* IngredientNumberCell.m */,
+				93165477170E08BF00E467F5 /* IngredientNameCell.h */,
+				93165478170E08BF00E467F5 /* IngredientNameCell.m */,
+				9316545B170DEB0300E467F5 /* ImparRecipeCell.h */,
+				9316545C170DEB0300E467F5 /* ImparRecipeCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		93165467170DFE9600E467F5 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				93B04CDC1705F7F1005836E4 /* InstructionsView.h */,
+				93B04CDD1705F7F1005836E4 /* InstructionsView.m */,
+				93B04CD91705EC6C005836E4 /* ButtonCell.h */,
+				93B04CDA1705EC6C005836E4 /* ButtonCell.m */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
 		9388286517025471001D022B = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +183,13 @@
 		9388287717025471001D022B /* Tomatto */ = {
 			isa = PBXGroup;
 			children = (
+				93165467170DFE9600E467F5 /* CollectionView */,
+				93165466170DFE7A00E467F5 /* TableViewCells */,
+				93165465170DFE5800E467F5 /* Data Model */,
+				93165464170DFE1700E467F5 /* ViewControllers */,
 				9388288017025471001D022B /* AppDelegate.h */,
 				9388288117025471001D022B /* AppDelegate.m */,
 				9388288917025471001D022B /* MainStoryboard.storyboard */,
-				9388288C17025471001D022B /* ViewController.h */,
-				9388288D17025471001D022B /* ViewController.m */,
 				9388287817025471001D022B /* Supporting Files */,
 			);
 			path = Tomatto;
@@ -175,7 +277,21 @@
 			files = (
 				9388287E17025471001D022B /* main.m in Sources */,
 				9388288217025471001D022B /* AppDelegate.m in Sources */,
-				9388288E17025471001D022B /* ViewController.m in Sources */,
+				938828961702554F001D022B /* ViewController.m in Sources */,
+				93B04CDB1705EC6C005836E4 /* ButtonCell.m in Sources */,
+				93B04CDE1705F7F1005836E4 /* InstructionsView.m in Sources */,
+				93375B47170742540048DAC4 /* Ingredients.m in Sources */,
+				93375B4A170747F30048DAC4 /* Recipes.m in Sources */,
+				93239134170772F800979F43 /* Recipe.m in Sources */,
+				932391371707736400979F43 /* Ingredient.m in Sources */,
+				9316545A170DE32800E467F5 /* RecipesViewController.m in Sources */,
+				9316545D170DEB0300E467F5 /* ImparRecipeCell.m in Sources */,
+				93165460170DEBE200E467F5 /* ParRecipeCell.m in Sources */,
+				93165463170DFC4C00E467F5 /* RecipeViewController.m in Sources */,
+				93165470170E03A700E467F5 /* QuantitiesTableViewController.m in Sources */,
+				93165473170E03CC00E467F5 /* NamesTableViewController.m in Sources */,
+				93165476170E08B000E467F5 /* IngredientNumberCell.m in Sources */,
+				93165479170E08BF00E467F5 /* IngredientNameCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +416,7 @@
 				9388289317025471001D022B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
