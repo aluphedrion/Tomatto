@@ -19,6 +19,11 @@
     return self;
 }
 
+-(void)prepareForReuse{
+    
+    self.backgroundColor = [UIColor blackColor];
+    self.label.textColor = [UIColor whiteColor];
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

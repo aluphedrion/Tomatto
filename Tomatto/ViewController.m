@@ -28,16 +28,23 @@
 @implementation ViewController{
 
     NSMutableArray *selectedRecipesIndexSet;
+    NSMutableArray *selectedCellIndexPaths;
 }
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
     
     if ((self = [super initWithCoder:aDecoder])){
         
+        selectedCellIndexPaths = [NSMutableArray arrayWithCapacity:20];
         selectedRecipesIndexSet = [NSMutableArray arrayWithCapacity:20];
         self.selectedIngredientNames = [@[] mutableCopy];
+        
+        if (self.ingredientsBook == nil){
         self.ingredientsBook = [[Ingredients alloc] init];
+        }
+        if (self.recipes == nil){
         self.recipes = [[Recipes alloc] init];
+        }
     }
     return self;
 }
@@ -171,12 +178,32 @@
     
     ButtonCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ButtonCell" forIndexPath:indexPath];
     
-    NSString *title = self.ingredientsBook.names[indexPath.row];
+    NSString *title = self.ingredientsBook.names[indexPath.item];
     
     cell.label.text = title;
     
+    if ([self isSelectedIndexPath:indexPath]){
+        
+        cell.backgroundColor = [UIColor whiteColor];
+        cell.label.textColor = [UIColor blueColor];
+    } else {
+        
+        cell.backgroundColor = [UIColor blackColor];
+        cell.label.textColor = [UIColor whiteColor];
+    }
     return cell;
     
+}
+
+-(BOOL)isSelectedIndexPath:(NSIndexPath *)indexPath{
+    
+    for (NSIndexPath *test in selectedCellIndexPaths){
+        if (test == indexPath){
+            return YES;
+        }
+    }
+    
+    return NO;
 }
 
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
@@ -187,15 +214,22 @@
 
 #pragma mark - UICollectionViewDelegate
 
+-(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSLog(@"%@", indexPath);
+
+    return YES;
+}
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     self.searchButton.enabled = YES;
     
     ButtonCell *cell = (ButtonCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    [selectedCellIndexPaths addObject:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
     cell.label.textColor = [UIColor blueColor];
     
-    NSString *name = self.ingredientsBook.names[indexPath.row];
+    NSString *name = self.ingredientsBook.names[indexPath.item];
     [self.selectedIngredientNames addObject:name];
     
     
@@ -209,7 +243,8 @@
     cell.backgroundColor = [UIColor blackColor];
     cell.label.textColor = [UIColor whiteColor];
     
-    NSString *name = self.ingredientsBook.names[indexPath.row];
+    [selectedCellIndexPaths removeObject:indexPath];
+    NSString *name = self.ingredientsBook.names[indexPath.item];
     [self.selectedIngredientNames removeObject:name];
     
     

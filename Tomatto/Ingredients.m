@@ -14,7 +14,7 @@
     
     if ((self = [super init])){
         
-        self.names = @[@"ajo", @"aceite", @"leche de soja", @"leche de avena", @"frutos rojos", @"azúcar moreno"];
+        self.names = @[@"ajo", @"aceite", @"leche de soja", @"leche de avena", @"frutos rojos", @"azúcar moreno", @"avena", @"almendras", @"arroz", @"zanahoria", @"cebolla", @"aceitunas", @"pan rallado", @"tomate", @"pimiento rojo", @"pimiento verde", @"calabacín", @"berenjena", @"perejil"];
 
     }
     return self;
